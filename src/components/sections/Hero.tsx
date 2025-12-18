@@ -26,40 +26,43 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="max-w-3xl"
+                    className="max-w-4xl"
                 >
-                    <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl mb-6">
+                    <h1 className="text-5xl font-black tracking-tight sm:text-6xl lg:text-7xl mb-8 leading-tight">
                         Unlock Your Potential with <br />
-                        <span className="text-yellow-300">Clouds English Center</span>
+                        <span className="text-yellow-400 drop-shadow-md">Clouds English Center</span>
                     </h1>
-                    <p className="text-xl sm:text-2xl mb-8 text-white/90 font-medium max-w-2xl">
+                    <p className="text-xl sm:text-2xl mb-12 text-white/95 font-medium max-w-2xl leading-relaxed drop-shadow-sm">
                         Experience a modern way to learn English with expert teachers, interactive apps, and a supportive community.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <Button size="lg" className="bg-black hover:bg-black/80 text-white border border-white/20 h-14 px-6 rounded-xl flex items-center gap-3 transition-transform hover:scale-105">
-                            <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-                                <path d="M17.05 20.28c-.98.95-2.05 1.08-3.08 1.04-1.07-.05-2.54-.9-3.87-.9-1.4 0-2.8.92-3.8.92-1.6 0-3.3-1.62-4.24-3.55a8 8 0 0 1-.39-3.3c.13-2.6 1.9-4.22 4.09-4.22 1.34 0 2.27.66 3.03.66.75 0 1.96-.8 3.5-.8 1.45 0 2.58.74 3.3 1.83-3.23 1.6-2.5 5.86.35 6.94-.48 1.43-1.14 2.85-2.03 3.82M12.03 7.25c-.15 1.55-1.17 2.97-2.68 3.1-.4.01-.83-.07-1.22-.24-.2-.08-.4-.2-.56-.35a3.6 3.6 0 0 1-1.05-3.3c.09-1.37.95-2.78 2.37-3.15 1.54-.4 3.29.39 3.14 3.94Z" />
+                    <div className="flex flex-col sm:flex-row gap-5">
+                        {/* Apple App Store Button */}
+                        <Button size="lg" className="bg-black hover:bg-zinc-900 text-white border border-white/20 h-16 px-6 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 hover:shadow-xl group">
+                            <svg viewBox="0 0 384 512" fill="currentColor" className="w-8 h-8 group-hover:text-white/90">
+                                <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 43.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
                             </svg>
-                            <div className="flex flex-col items-start leading-none">
-                                <span className="text-[10px] uppercase font-medium text-white/80">Download on the</span>
-                                <span className="text-lg font-bold">App Store</span>
+                            <div className="flex flex-col items-start leading-none gap-0.5">
+                                <span className="text-[11px] uppercase font-semibold text-zinc-400 tracking-wide">Download on the</span>
+                                <span className="text-2xl font-bold tracking-tight">App Store</span>
                             </div>
                         </Button>
 
-                        <Button size="lg" className="bg-black hover:bg-black/80 text-white border border-white/20 h-14 px-6 rounded-xl flex items-center gap-3 transition-transform hover:scale-105">
-                            <svg viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7">
-                                <path d="M4.05 2.56a.7.7 0 0 0-.15.48v17.92c0 .2.05.37.15.48l.06.06 9.5-9.48-9.5-9.48-.06.02Zm10.97 10.95 3.32 3.32-.42.42c-1.35.79-2.9 1.68-3.95 2.29L12.92 14l2.1-1.49Zm1.1-2.02-1.1-1.1-2.1-2.09 1.04-.6c1.06-.61 2.6-1.5 3.96-2.29l.41.41-3.32 3.32.01.27.01.08Zm-9.98-9.58L12.06 13 5.08 1.85c-.47-.26-1.07-.38-1.74-.48l-1.4.03-.02-.02 4.22 4.35 9.01-3.83-9.01 3.83Z" />
-                                <path d="M12.06 13 6.14 18.91 5.08 22.15l1.41-.03c.66-.1 1.27-.22 1.74-.48L15.02 12 12.06 13Z" />
-                                <path d="M4.34 2.87 3.5 1.25l-.83 1.62-.01.02.04.04 1.4 1.4.24-.24-1.4-1.4.24.26 1.16-1.08Z" fill="none" />
+                        {/* Google Play Store Button */}
+                        <Button size="lg" className="bg-black hover:bg-zinc-900 text-white border border-white/20 h-16 px-6 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 hover:shadow-xl group">
+                            <svg viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 group-hover:text-white/90">
+                                <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l220.7-221.2-60.1-60.1L104.6 499z" />
                             </svg>
-                            <div className="flex flex-col items-start leading-none">
-                                <span className="text-[10px] uppercase font-medium text-white/80">Get it on</span>
-                                <span className="text-lg font-bold">Google Play</span>
+                            <div className="flex flex-col items-start leading-none gap-0.5">
+                                <span className="text-[11px] uppercase font-semibold text-zinc-400 tracking-wide">GET IT ON</span>
+                                <a href="https://play.google.com/store/apps/details?id=lab.justonebyte.cecstudentapp&hl=en">
+                                    <span className="text-2xl font-bold tracking-tight">Google Play</span>
+                                </a>
                             </div>
                         </Button>
                     </div>
                 </motion.div>
             </div>
+
         </section>
     );
 }

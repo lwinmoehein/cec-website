@@ -21,29 +21,32 @@ export function Navbar() {
     const pathname = usePathname();
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+        <header className="sticky top-0 z-50 w-full bg-primary border-b border-white/10 shadow-sm transition-all">
+            <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center gap-2">
-                    <Link href="/" className="flex items-center gap-2">
-                        <Image src={logo} alt="Clouds English Center Logo" width={32} height={32} />
-                        <span className="text-xl font-bold tracking-tight text-primary">Clouds English Center</span>
+                    <Link href="/" className="flex items-center gap-3">
+                        <Image src={logo} alt="Clouds English Center Logo" width={40} height={40} className="w-10 h-10 object-contain rounded-md bg-white/10 p-0.5" />
+                        <span className="text-lg font-bold tracking-tight text-white leading-none">Clouds English Center</span>
                     </Link>
                 </div>
-                <nav className="hidden md:flex gap-6">
+                <nav className="hidden md:flex gap-8 items-center">
                     {navigation.map((item) => (
                         <Link
                             key={item.name}
                             href={item.href}
                             className={cn(
-                                "text-sm font-medium transition-colors hover:text-primary",
+                                "text-sm font-medium transition-all hover:text-white",
                                 pathname === item.href
-                                    ? "text-primary"
-                                    : "text-muted-foreground"
+                                    ? "text-white font-bold"
+                                    : "text-blue-100 hover:text-white"
                             )}
                         >
                             {item.name}
                         </Link>
                     ))}
+                    {/* <Button className="rounded-full px-6 font-semibold shadow-md bg-white text-primary hover:bg-blue-50 transition-all hover:shadow-lg hover:-translate-y-0.5" size="default">
+                        Get the App
+                    </Button> */}
                 </nav>
                 <div className="flex md:hidden">
                     <Button
@@ -53,14 +56,11 @@ export function Navbar() {
                     >
                         <span className="sr-only">Open main menu</span>
                         {mobileMenuOpen ? (
-                            <X className="h-6 w-6" aria-hidden="true" />
+                            <X className="h-6 w-6 text-white" aria-hidden="true" />
                         ) : (
-                            <Menu className="h-6 w-6" aria-hidden="true" />
+                            <Menu className="h-6 w-6 text-white" aria-hidden="true" />
                         )}
                     </Button>
-                </div>
-                <div className="hidden md:flex">
-                    <Button variant="default">Get the App</Button>
                 </div>
             </div>
             {mobileMenuOpen && (
@@ -71,19 +71,19 @@ export function Navbar() {
                                 key={item.name}
                                 href={item.href}
                                 className={cn(
-                                    "block rounded-md px-3 py-2 text-base font-medium",
+                                    "block rounded-md px-3 py-2 text-base font-medium transition-colors",
                                     pathname === item.href
-                                        ? "bg-primary/10 text-primary"
-                                        : "text-muted-foreground hover:bg-muted hover:text-primary"
+                                        ? "bg-white/10 text-white font-bold"
+                                        : "text-blue-100 hover:bg-white/10 hover:text-white"
                                 )}
                                 onClick={() => setMobileMenuOpen(false)}
                             >
                                 {item.name}
                             </Link>
                         ))}
-                        <div className="mt-4">
+                        {/* <div className="mt-4">
                             <Button className="w-full">Get the App</Button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             )}

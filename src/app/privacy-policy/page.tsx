@@ -55,12 +55,12 @@ export default function PrivacyPolicyPage() {
 
                     <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5. Data Erasure</h2>
                     <p className="mb-4">
-                        You represent the right to request the deletion of your account and associated data. Please contact us at info@cloudsenglish.com to initiate a data deletion request.
+                        You represent the right to request the deletion of your account and associated data. Please contact us at info@cloudsenglishcenter.com to initiate a data deletion request.
                     </p>
 
                     <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">6. Contact Us</h2>
                     <p className="mb-4">
-                        If you have any questions regarding this Privacy Policy or our data practices, please contact our support team at info@cloudsenglish.com.
+                        If you have any questions regarding this Privacy Policy or our data practices, please contact our support team at info@cloudsenglishcenter.com.
                     </p>
                 </div>
             </div>
