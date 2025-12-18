@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import logo from "../../../public/images/playstore.png"; // Static import
 
 const navigation = [
     { name: "Home", href: "/" },
@@ -24,7 +25,7 @@ export function Navbar() {
             <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center gap-2">
                     <Link href="/" className="flex items-center gap-2">
-                        <Image src="/images/playstore.png" alt="Clouds English Center Logo" width={32} height={32} />
+                        <Image src={logo} alt="Clouds English Center Logo" width={32} height={32} />
                         <span className="text-xl font-bold tracking-tight text-primary">Clouds English Center</span>
                     </Link>
                 </div>

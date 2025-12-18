@@ -1,5 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import logo from "../../../public/images/playstore.png";
 
 export function Footer() {
     return (
@@ -7,7 +9,10 @@ export function Footer() {
             <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="space-y-4">
-                        <h3 className="text-lg font-bold text-primary">Clouds English Center</h3>
+                        <div className="flex items-center gap-2">
+                            <Image src={logo} alt="Clouds English Center Logo" width={32} height={32} />
+                            <h3 className="text-lg font-bold text-primary">Clouds English Center</h3>
+                        </div>
                         <p className="text-sm text-muted-foreground max-w-xs">
                             Learn English effectively with expert teachers and interactive tools.
                         </p>

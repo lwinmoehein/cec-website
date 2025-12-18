@@ -20,13 +20,14 @@ export default function PrivacyPolicyPage() {
 
                     <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">1. Account Creation and Course Access</h2>
                     <p className="mb-4">
-                        Our application allows students to create accounts to access educational content and track their learning progress.
-                        <strong> We only store student progress data and basic profile information</strong> necessary to provide this educational service.
+                        <strong>Account creation is restricted to administrators only.</strong> Students cannot self-register.
+                        Access credentials are provided directly by Clouds English Center. We only store student progress data
+                        and basic profile information created by the administration to provide this educational service.
                     </p>
 
                     <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">2. Information We Collect</h2>
                     <ul className="list-disc pl-5 mb-4 space-y-2">
-                        <li><strong>Profile Information:</strong> Name, email address, and profile picture (optional) provided during registration.</li>
+                        <li><strong>Profile Information:</strong> Name, email address, and profile picture (optional) provided by the administration.</li>
                         <li><strong>Learning Data:</strong> Course progress, quiz scores, and attendance records.</li>
                         <li><strong>Device Information:</strong> Basic device information to ensure app compatibility and security.</li>
                     </ul>
