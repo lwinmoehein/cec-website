@@ -15,52 +15,59 @@ export default function PrivacyPolicyPage() {
                     <p className="mb-4">Last Updated: {new Date().toLocaleDateString()}</p>
 
                     <p className="mb-6">
-                        At Clouds English Center, we are committed to protecting your privacy. This policy outlines how our platform and mobile applications collect, use, and handle your data.
+                        At Clouds English Center, we are committed to protecting your privacy. This policy outlines how our platform and mobile applications collect, use, and handle your data in compliance with Google Play Developer Policies.
                     </p>
 
-                    <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">1. Account Creation and Course Access</h2>
+                    <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">1. Account Creation and Access</h2>
                     <p className="mb-4">
-                        <strong>Account creation is restricted to administrators only.</strong> Students cannot self-register.
-                        Access credentials are provided directly by Clouds English Center. We only store student progress data
-                        and basic profile information created by the administration to provide this educational service.
+                        <strong>Account creation is restricted to administrators only.</strong> Students cannot self-register through the app.
+                        Login credentials (Phone Number and Password) are provided directly by Clouds English Center.
                     </p>
 
                     <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">2. Information We Collect</h2>
+                    <p className="mb-4">To provide our educational services, we collect the following data:</p>
                     <ul className="list-disc pl-5 mb-4 space-y-2">
-                        <li><strong>Profile Information:</strong> Name, email address, and profile picture (optional) provided by the administration.</li>
-                        <li><strong>Learning Data:</strong> Course progress, quiz scores, and attendance records.</li>
-                        <li><strong>Device Information:</strong> Basic device information to ensure app compatibility and security.</li>
+                        <li><strong>Personal Identifiers:</strong> Name and Phone Number (used for authentication).</li>
+                        <li><strong>Learning Activity:</strong> Course progress, quiz scores, history of content viewed, and earned points.</li>
+                        <li><strong>Device Information:</strong> Device model, OS version, and unique identifiers to ensure security and prevent unauthorized multi-device access.</li>
                     </ul>
 
-                    <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">3. App Permissions</h2>
+                    <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">3. App Permissions & Third Parties</h2>
+                    <ul className="list-disc pl-5 mb-4 space-y-2">
+                        <li><strong>Notifications:</strong> Used for class reminders and course updates.</li>
+                        <li><strong>Service Providers:</strong> We may use third-party services (like Google Firebase) for push notifications and app analytics. These services do not use your data for marketing.</li>
+                    </ul>
+
+                    <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">4. Data Security</h2>
                     <p className="mb-4">
-                        Our mobile application may request the following permissions:
+                        We utilize industry-standard encryption to protect your data in transit and at rest. We do not sell or share student data with third-party advertisers.
                     </p>
-                    <ul className="list-disc pl-5 mb-4 space-y-2">
-                        <li><strong>Notifications:</strong> We request permission to send notifications to keep you updated on class schedules, new course content, and learning reminders. You can manage these preferences in your device settings at any time.</li>
-                    </ul>
 
-                    <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">4. Data Usage and Storage</h2>
+                    <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5. Account Deletion & Data Retention</h2>
                     <p className="mb-4">
-                        We use your data strictly to:
+                        Users have the right to request the deletion of their account and all associated personal data.
+                    </p>
+                    <p className="mb-4">
+                        To initiate a deletion request, you may:
                     </p>
                     <ul className="list-disc pl-5 mb-4 space-y-1">
-                        <li>Authenticate user access to enrolled courses.</li>
-                        <li>Track and display your individual learning progress.</li>
-                        <li>Improve the functionality of our educational platform.</li>
+                        <li>Contact us via email at <strong>apragmaticdev@gmail.com</strong></li>
+                        <li>Fill out our <a href="https://docs.google.com/forms/d/e/1FAIpQLSckE_WCIYcVC_nnbjy5VA0QNod5bOgZht2eXanL6CwxkUZqhg/viewform?usp=publish-editor" className="text-blue-600 underline">Account Deletion Request Form</a>.</li>
                     </ul>
-                    <p className="mb-4">
-                        We do not share your personal data with third parties for marketing purposes.
+                    <p className="mb-4 text-sm italic">
+                        Once a request is verified, all personal data including learning history and scores will be permanently removed from our active databases within 30 days.
                     </p>
 
-                    <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5. Data Erasure</h2>
+                    <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">6. Children's Privacy</h2>
                     <p className="mb-4">
-                        You represent the right to request the deletion of your account and associated data. Please contact us at info@cloudsenglishcenter.com to initiate a data deletion request.
+                        As an educational provider, we ensure that any data regarding students under the age of 18 is handled with the utmost care and only with the consent of the enrolling institution or parent/guardian.
                     </p>
 
-                    <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">6. Contact Us</h2>
+                    <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">7. Contact Us</h2>
                     <p className="mb-4">
-                        If you have any questions regarding this Privacy Policy or our data practices, please contact our support team at info@cloudsenglishcenter.com.
+                        For questions regarding this policy, contact: <strong>
+                            apragmaticdev@gmail.com
+                        </strong>.
                     </p>
                 </div>
             </div>
