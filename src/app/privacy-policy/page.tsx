@@ -43,20 +43,21 @@ export default function PrivacyPolicyPage() {
                         We utilize industry-standard encryption to protect your data in transit and at rest. We do not sell or share student data with third-party advertisers.
                     </p>
 
-                    <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5. Account Deletion & Data Retention</h2>
-                    <p className="mb-4">
-                        Users have the right to request the deletion of their account and all associated personal data.
-                    </p>
-                    <p className="mb-4">
-                        To initiate a deletion request, you may:
-                    </p>
-                    <ul className="list-disc pl-5 mb-4 space-y-1">
-                        <li>Contact us via email at <strong>apragmaticdev@gmail.com</strong></li>
-                        <li>Fill out our <a href="https://docs.google.com/forms/d/e/1FAIpQLSckE_WCIYcVC_nnbjy5VA0QNod5bOgZht2eXanL6CwxkUZqhg/viewform?usp=publish-editor" className="text-blue-600 underline">Account Deletion Request Form</a>.</li>
-                    </ul>
-                    <p className="mb-4 text-sm italic">
-                        Once a request is verified, all personal data including learning history and scores will be permanently removed from our active databases within 30 days.
-                    </p>
+                 <h2 class="text-xl font-semibold text-gray-900 mt-6 mb-3">5. Account Deletion & Data Retention</h2>
+<p class="mb-4">
+    Users have the right to request the deletion of their account and all associated personal data.
+</p>
+<p class="mb-4">
+    To delete your account, you can:
+</p>
+<ul class="list-disc pl-5 mb-4 space-y-1">
+    <li>Use the <strong>“Delete Account”</strong> button directly in the app.</li>
+    <li>Or, contact us via email at <strong>apragmaticdev@gmail.com</strong>.</li>
+</ul>
+<p class="mb-4 text-sm italic">
+    Once a deletion request is verified, all personal data, including learning history and scores, will be permanently removed from our active databases within 30 days.
+</p>
+
 
                     <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">6. Children's Privacy</h2>
                     <p className="mb-4">
