@@ -43,7 +43,7 @@ export function Hero() {
                             </svg>
                             <div className="flex flex-col items-start leading-none gap-0.5">
                                 <span className="text-[11px] uppercase font-semibold text-zinc-400 tracking-wide">Download on the</span>
-                                <span className="text-2xl font-bold tracking-tight">App Store</span>
+                                <a href="https://apps.apple.com/us/app/clouds-english/id6756755121"><span className="text-2xl font-bold tracking-tight">App Store</span></a>
                             </div>
                         </Button>
 
