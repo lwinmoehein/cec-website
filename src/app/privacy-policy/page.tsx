@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
                     </p>
                     <ul className="list-disc pl-5 mb-4 space-y-1">
                         <li>Use the <strong>“Delete Account”</strong> button directly in the app.</li>
-                        <li>Or, contact us via email at <strong>apragmaticdev@gmail.com</strong>.</li>
+                        <li>Or, contact us via email at <strong>info@cloudsenglishcenter.com</strong>.</li>
                     </ul>
                     <p className="mb-4 text-sm italic">
                         Once a deletion request is verified, all personal data, including learning history and scores, will be permanently removed from our active databases within 30 days.
@@ -65,7 +65,7 @@ export default function PrivacyPolicyPage() {
 
                     <h2 className="text-xl font-semibold text-gray-900 mt-6 mb-3">7. Contact Us</h2>
                     <p className="mb-4">
-                        For questions regarding this policy, contact: <strong>apragmaticdev@gmail.com</strong>.
+                        For questions regarding this policy, contact: <strong>info@cloudsenglishcenter.com</strong>.
                     </p>
                 </div>
             </div>

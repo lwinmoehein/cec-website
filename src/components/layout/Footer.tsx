@@ -42,7 +42,7 @@ export function Footer() {
                         <ul className="space-y-4 text-sm text-blue-100">
                             <li className="flex items-center gap-2">
                                 <span>Email:</span>
-                                <a href="mailto:apragmaticdev@gmail.com" className="text-white hover:underline decoration-white/30 underline-offset-4">apragmaticdev@gmail.com</a>
+                                <a href="mailto:info@cloudsenglishcenter.com" className="text-white hover:underline decoration-white/30 underline-offset-4">info@cloudsenglishcenter.com</a>
                             </li>
                         </ul>
                     </div>
